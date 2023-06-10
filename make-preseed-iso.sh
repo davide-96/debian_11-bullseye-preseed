@@ -5,7 +5,7 @@ set -e
 function extract_iso() {
   echo "Extracting iso: $1..."
   mkdir isofiles
-  bsdtar -C isofiles -xf "$1"
+  7z x -oisofiles "$1"
 }
 
 function add_preseed_to_initrd() {
